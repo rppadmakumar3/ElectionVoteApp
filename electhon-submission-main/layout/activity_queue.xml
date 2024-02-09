@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montbold"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_height="wrap_content"
+        android:text="Select a state:" />
+
+    <Spinner
+        android:background="@drawable/edittext_background"
+        android:padding="20dp"
+        android:id="@+id/state_spinner"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montbold"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a district:" />
+
+    <Spinner
+        android:background="@drawable/edittext_background"
+        android:padding="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/district_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montbold"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a constituency:" />
+
+    <Spinner
+        android:background="@drawable/edittext_background"
+        android:padding="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/constituency_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montbold"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter queue status:" />
+
+    <EditText
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/queue_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:background="@drawable/rounded_rectangle"
+        android:fontFamily="@font/montbold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="140dp"
+        android:onClick="saveQueueStatus" />
+
+</LinearLayout>

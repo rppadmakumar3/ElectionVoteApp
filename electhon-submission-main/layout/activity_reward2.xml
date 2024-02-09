@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RewardActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/rewtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="CLAIM REWARDS"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/montbold"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@id/rewtxt"
+        android:id="@+id/big_card_view"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="26dp">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:background="@drawable/reward_round"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/rewcoin" />
+
+            <TextView
+                android:id="@+id/points_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/image_view"
+                android:fontFamily="@font/montbold"
+                android:text="1000"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/reward_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/big_card_view"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/reward_image_1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/tea" />
+
+                <TextView
+                    android:id="@+id/reward_name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_image_1"
+                    android:layout_centerHorizontal="true"
+                    android:text="Tea"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/reward_points_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_name_1"
+                    android:layout_centerHorizontal="true"
+                    android:text="100 points"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/redeem_button_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_points_1"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/reward_round"
+                    android:fontFamily="@font/montbold"
+                    android:text="Redeem"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/reward_image_2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/coffee" />
+
+                <TextView
+                    android:id="@+id/reward_name_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_image_2"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montbold"
+                    android:textColor="@color/black"
+                    android:text="Coffee"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/reward_points_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_name_2"
+                    android:layout_centerHorizontal="true"
+                    android:text="200 points"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/redeem_button_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_points_2"
+                    android:background="@drawable/reward_round"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montbold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Redeem"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/reward_layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reward_layout_1"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/reward_image_3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sweetbox" />
+
+                <TextView
+                    android:id="@+id/reward_name_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_image_3"
+                    android:layout_centerHorizontal="true"
+                    android:text="Sweet Box"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/reward_points_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_name_3"
+                    android:layout_centerHorizontal="true"
+                    android:text="500 points"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/redeem_button_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_points_3"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/reward_round"
+                    android:fontFamily="@font/montbold"
+                    android:text="Redeem"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/reward_image_4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icecream1" />
+
+                <TextView
+                    android:id="@+id/reward_name_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_image_4"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/montbold"
+                    android:textColor="@color/black"
+                    android:text="Ice Cream"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/reward_points_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_name_4"
+                    android:layout_centerHorizontal="true"
+                    android:text="400 points"
+                    android:fontFamily="@font/montbold"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/redeem_button_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/reward_points_4"
+                    android:background="@drawable/reward_round"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/montbold"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Redeem"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
